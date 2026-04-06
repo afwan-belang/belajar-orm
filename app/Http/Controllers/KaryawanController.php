@@ -15,6 +15,12 @@ class KaryawanController extends Controller
         return view('karyawan.index', ['karyawan' => $karyawan]);
     }
 
+    public function show()
+    {
+        return view('karyawan.tambah');
+    }
+
+    // CREATE
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -30,6 +36,14 @@ class KaryawanController extends Controller
         return redirect('/karyawan');
     }
 
+    public function edit($id)
+    {
+        $karyawan = Karyawan::findOrFail($id);
+
+        return view('karyawan.edit', ['karyawan' => $karyawan]);
+    }
+
+    // UPDATE
     public function update(Request $request, $id)
     {
         $karyawan = Karyawan::findOrFail($id);
@@ -39,13 +53,15 @@ class KaryawanController extends Controller
             'posisi' => 'required'
         ]);
         
-        $karyawan->nama = $request->nama;
-        $karyawan->posisi = $request->posisi;
+        $karyawan->update([
+            'nama' => $request->nama,
+            'posisi' => $request->posisi
+        ]);
 
-        $karyawan->save();
         return redirect('/karyawan');
     }
 
+    // DELETE
     public function destroy($id)
     {
         Karyawan::destroy($id);
