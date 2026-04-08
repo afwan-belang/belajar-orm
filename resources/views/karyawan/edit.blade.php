@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name', 'Edit Karyawan') }}</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="min-h-screen bg-slate-100 text-slate-800 antialiased">
+@extends('layouts.main')
+
+@section('content')
     <div class="px-3 py-4">
         <h2 class="text-2xl font-semibold">Edit Data Karyawan</h2>
     </div>
@@ -34,5 +28,4 @@
             Edit Karyawan
         </button>
     </form>
-</body>
-</html>
+@endsection
