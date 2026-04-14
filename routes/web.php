@@ -1,7 +1,11 @@
 <?php
-
+use App\Http\Controllers\ProyekController;
 use App\Http\Controllers\KaryawanController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/karyawan/{karyawan_id}/proyek/tambah', [ProyekController::class, 'create'])->name('proyek.tambah');
+Route::post('/karyawan/{karyawan_id}/proyek', [ProyekController::class, 'store'])->name('proyek.store');
+Route::put('/proyek/{id}/status', [ProyekController::class, 'updateStatus'])->name('proyek.updateStatus');
 
 Route::get('/', function () {
     return view('welcome');

@@ -8,11 +8,25 @@ use Illuminate\Http\Request;
 class KaryawanController extends Controller
 {
     // READ
-    public function index()
+    // READ (Dengan Search & Pagination)
+    public function index(Request $request)
     {
-        $karyawan = Karyawan::all(); // -> SELECT * FROM karyawan;
+        // Menangkap inputan pencarian dari URL (?search=...)
+        $search = $request->input('search');
 
-        return view('karyawan.index', ['karyawan' => $karyawan]);
+        // Query dengan Eager Loading, Search, dan Pagination
+        $karyawan = Karyawan::with('proyeks')
+            ->when($search, function ($query, $search) {
+                // Mencari berdasarkan nama atau posisi
+                return $query->where('nama', 'like', "%{$search}%")
+                             ->orWhere('posisi', 'like', "%{$search}%");
+            })
+            // Menampilkan 5 data per halaman
+            ->paginate(5)
+            // withQueryString() agar saat pindah halaman, parameter search tidak hilang
+            ->withQueryString(); 
+
+        return view('karyawan.index', compact('karyawan', 'search'));
     }
 
     public function show()
