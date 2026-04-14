@@ -31,5 +31,33 @@ Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langka
 
 1. **Clone repository ini:**
    ```bash
-   git clone [https://github.com/username-anda/nama-repo-anda.git](https://github.com/username-anda/nama-repo-anda.git)
+   git clone https://github.com/afwan-belang/belajar-orm.git 
    cd nama-repo-anda
+
+2. **Instalasi Dependency Laravel:**
+   ```bash
+   composer install
+
+3. **Instalasi Dependency NPM:**
+   ```bash
+   npm install
+
+4. **Clone repository ini:**
+    Duplikat file .env.example menjadi .env, lalu sesuaikan konfigurasi database Anda.
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+
+5. **Jalankan Migrasi Database:**
+   ```bash
+   php artisan migrate
+
+6. **Jalankan 2 Server :**
+    Buka dua terminal dan jalankan kedua perintah ini secara bersamaan:
+   ```bash
+   # Terminal 1 (Untuk menjalankan server PHP)
+   php artisan serve
+   
+   # Terminal 2 (Untuk mengkompilasi asset Tailwind CSS & Vite)
+   npm run dev
+
