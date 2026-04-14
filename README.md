@@ -32,7 +32,7 @@ Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langka
 1. **Clone repository ini:**
    ```bash
    git clone https://github.com/afwan-belang/belajar-orm.git 
-   cd nama-repo-anda
+   cd belajar-orm
 
 2. **Instalasi Dependency Laravel:**
    ```bash
@@ -57,7 +57,7 @@ Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langka
    ```bash
    # Terminal 1 (Untuk menjalankan server PHP)
    php artisan serve
-   
+
    # Terminal 2 (Untuk mengkompilasi asset Tailwind CSS & Vite)
    npm run dev
 
