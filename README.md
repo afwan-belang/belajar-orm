@@ -7,7 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+<h1>Tampilan Dashboard Light Mode</h1>
+
 ![DashboardLightMode](Dashboard-LightMode.png)
+<h1>Tampilan Dashboard Night Mode</h1>
+
 ![DashboardLightMode](Dashboard-NightMode.png)
+<h1>Tambah Data Karyawan</h1>
+
 ![DashboardLightMode](TambahKaryawan.png)
+<h1>Tambah Proyek Yang dikerjakan Karyawan</h1>
+
 ![DashboardLightMode](TambahProyekKaryawan.png)
