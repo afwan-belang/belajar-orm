@@ -61,3 +61,5 @@ Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langka
    # Terminal 2 (Untuk mengkompilasi asset Tailwind CSS & Vite)
    npm run dev
 
+<h1>Dibuat Oleh</h1>
+Nama : Muhammad Haikal Afwan
