@@ -8,3 +8,6 @@
 </p>
 
 ![DashboardLightMode](Dashboard-LightMode.png)
+![DashboardLightMode](Dashboard-NightMode.png)
+![DashboardLightMode](TambahKaryawan.png)
+![DashboardLightMode](TambahProyekKaryawan.png)
