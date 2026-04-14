@@ -62,9 +62,9 @@ Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langka
    npm run dev
 
 # Dibuat Oleh
-Nama        : Muhammad Haikal Afwan
-Kelas       : XI RPL 3
-No. Absen   : 22
-NIS         : 2425120693
+<p>Nama        : Muhammad Haikal Afwan</p>
+<p>Kelas       : XI RPL 3</p>
+<p>No. Absen   : 22</p>
+<p>NIS         : 2425120693 </p>
 
 SMKN 4 Bandung
