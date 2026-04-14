@@ -13,16 +13,6 @@ Sebuah sistem informasi manajemen Sumber Daya Manusia (SDM) dan pemantauan Proye
 
 Proyek ini mendemonstrasikan implementasi CRUD tingkat lanjut yang interaktif, meniru nuansa *Single Page Application* (SPA) menggunakan arsitektur Laravel yang solid.
 
-
-## 🚀 Cara Instalasi & Menjalankan Project
-
-Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langkah-langkah standar berikut:
-
-1. **Clone repository ini:**
-   ```bash
-   git clone [https://github.com/username-anda/nama-repo-anda.git](https://github.com/username-anda/nama-repo-anda.git)
-   cd nama-repo-anda
-
 <h1>Tampilan Dashboard Light Mode</h1>
 
 ![DashboardLightMode](Dashboard-LightMode.png)
@@ -35,3 +25,11 @@ Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langka
 <h1>Tambah Proyek Yang dikerjakan Karyawan</h1>
 
 ![DashboardLightMode](TambahProyekKaryawan.png)
+## 🚀 Cara Instalasi & Menjalankan Project
+
+Jika Anda ingin menjalankan proyek ini di *local environment* Anda, ikuti langkah-langkah standar berikut:
+
+1. **Clone repository ini:**
+   ```bash
+   git clone [https://github.com/username-anda/nama-repo-anda.git](https://github.com/username-anda/nama-repo-anda.git)
+   cd nama-repo-anda
